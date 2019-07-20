@@ -1,0 +1,186 @@
+#headerWrapper {
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 2px 8px fadeout(#000, 90%);
+    background-color: #fafafa;
+    #headerVertical {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        #mainHeader {
+            position: relative;
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+
+#headerLogo {
+    vertical-align: middle;
+    width: auto;
+    height: 50px;
+}
+
+#searchForm {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 0;
+    transition: box-shadow 0.1s;
+    &:hover {
+        box-shadow: 0 2px 8px fadeout(#000, 70%);
+    }
+    input,
+    button {
+        display: inline-block;
+        box-sizing: border-box;
+        vertical-align: middle;
+    }
+    .input_search {
+        outline: none;
+        width: calc(~"100% - 50px");
+        height: 100%;
+        padding: 0 20px;
+        border: 0;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    #searchSubmit {
+        cursor: pointer;
+        width: 50px;
+        height: 100%;
+        border: 0;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #44474f;
+        transition: color 0.1s;
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.header_button {
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    vertical-align: middle;
+    width: 50px;
+    height: 100%;
+    padding: 0 5px;
+    border: 0;
+    background-color: #fafafa;
+    color: #44474f;
+    transition: color 0.1s;
+    &:hover {
+        color: #000;
+    }
+}
+
+#accountInfoMenu {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 140px;
+    z-index: 9999;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 8px 32px fadeout(#000, 50%);
+    text-align: initial;
+    &:before {
+        content: "";
+        display: inline-block;
+        float: right;
+        margin: -40px 0 0 0;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #fff transparent;
+    }
+    #accountInfoList {
+        margin: 0;
+        padding: 0;
+        .account_elements {
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.1s;
+            &:hover {
+                color: #2196f3;
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+        .activate {
+            color: #2196f3;
+            font-weight: 900;
+        }
+    }
+}
+
+#headerSubjectButton {
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    vertical-align: middle;
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #2196f3;
+    color: #fff;
+    transition: background 0.1s;
+    &:hover {
+        background-color: darken(#2196f3, 10%);
+    }
+}
+
+#subjectSelect {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    z-index: 9999;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 8px 32px fadeout(#000, 50%);
+    text-align: initial;
+    &:before {
+        content: "";
+        display: inline-block;
+        float: right;
+        margin: -40px 0 0 0;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #fff transparent;
+    }
+    #subjectList {
+        margin: 0;
+        padding: 0;
+        .subject_elements {
+            cursor: pointer;
+            list-style: none;
+            transition: color 0.1s;
+            &:hover {
+                color: #2196f3;
+            }
+        }
+        .activate {
+            color: #2196f3;
+            font-weight: 900;
+        }
+    }
+}

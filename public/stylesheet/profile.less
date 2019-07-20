@@ -1,0 +1,240 @@
+#profileSectionWrapper {
+    #profileSection {}
+}
+
+#profileTopWrapper {
+    display: table;
+    width: 100%;
+    height: 350px;
+    background-color: #f6f6f6;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    letter-spacing: -1px;
+    #profileTop {
+        display: table-cell;
+        position: relative;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        #profileImage {
+            display: block;
+            cursor: pointer;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+        #profileImageForm {
+            display: none;
+            position: absolute;
+            top: calc(~"50% - 12.5px");
+            left: calc(~"50% - 141.5px");
+            background-color: #fff;
+        }
+        #nicknameForm {
+            position: relative;
+            display: inline-block;
+            #profileName {
+                display: inline-block;
+                font-size: 1.5em;
+                font-weight: 700;
+                text-align: center;
+            }
+            input#profileName {
+                margin-top: 10px;
+            }
+            #nicknameChangeButton {
+                cursor: pointer;
+                position: absolute;
+                top: 9px;
+                right: -25px;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+#profileTabWrapper {
+    width: 100%;
+    height: 50px;
+    #profileTab {
+        text-align: center;
+        #profileTabList {
+            margin: 0;
+            padding: 0;
+            .profile_tab_elements {
+                display: inline-block;
+                box-sizing: border-box;
+                cursor: pointer;
+                list-style: none;
+                width: 60px;
+                height: 100%;
+                margin: 0 20px;
+                line-height: 50px;
+            }
+            .activate {
+                border-top: 4px solid #2196f3;
+            }
+        }
+    }
+}
+
+#clubIntroduce {
+    width: 500px;
+    margin: 60px auto 60px auto;
+    #clubIntroduceTitle {
+        position: relative;
+        width: 120px;
+        margin: 0 auto 10px auto;
+        border-bottom: 3px solid #2196f3;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-align: center;
+        i {
+            cursor: pointer;
+            position: absolute;
+            top: 9px;
+            right: -25px;
+            font-size: 0.85em;
+        }
+    }
+    textarea#clubIntroduceContent {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+}
+
+#clubCareer {
+    width: 500px;
+    margin: 60px auto 60px auto;
+    #clubCareerTitle {
+        position: relative;
+        width: 160px;
+        margin: 0 auto 16px auto;
+        border-bottom: 3px solid #2196f3;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-align: center;
+    }
+    #clubCareerList {
+        margin: 16px 0;
+        padding: 0;
+        .club_career_elements {
+            display: block;
+            list-style: none;
+            margin: 8px 0;
+            text-align: center;
+            .career_elements_content {
+                display: inline-block;
+            }
+            .career_elements_delete {
+                display: inline-block;
+                cursor: pointer;
+                margin-left: 10px;
+            }
+        }
+    }
+    #clubCareerForm {
+        width: 100%;
+        height: 30px;
+        transition: box-shadow 0.1s;
+        &:hover {
+            box-shadow: 0 2px 8px fadeout(#000, 70%);
+        }
+        #clubCareerInput {
+            box-sizing: border-box;
+            outline: 0;
+            width: calc(~"100% - 34px");
+            margin: 0;
+            height: 100%;
+            padding: 0 16px;
+            border: 0;
+        }
+        #clubCareerSubmit {
+            width: 30px;
+            height: 100%;
+            margin: 0;
+            border: 0;
+            background-color: #2196f3;
+            color: #fff;
+            font-size: 1em;
+            font-weight: 100;
+            vertical-align: top;
+        }
+    }
+}
+
+#clubGallery {
+    position: relative;
+    width: 500px;
+    margin: 60px auto 60px auto;
+    #clubGalleryTitle {
+        position: relative;
+        width: 70px;
+        margin: 0 auto 10px auto;
+        border-bottom: 3px solid #2196f3;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-align: center;
+        i {
+            cursor: pointer;
+            position: absolute;
+            top: 9px;
+            right: -25px;
+            font-size: 0.85em;
+        }
+    }
+    #clubGalleryImage {
+        text-align: center;
+        .gallery_image_elements {
+            display: inline-block;
+            img {
+                vertical-align: middle;
+                width: 143px;
+                height: 143px;
+                margin: 20px 10px;
+                border-radius: 50%;
+            }
+            .student_name {}
+        }
+    }
+    #galleryUploadPopup {
+        display: none;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        background-color: #fff;
+        form {
+            width: 100%;
+            #uploadFileInput {
+                width: 100%;
+                height: 40px;
+            }
+            #uploadNameInput {
+                box-sizing: border-box;
+                vertical-align: top;
+                width: calc(~"100% - 70px");
+                height: 40px;
+                margin-left: 5px;
+                padding: 0 16px;
+                border: 1px solid #ccc;
+            }
+            #uploadFileSubmit {
+                display: inline-block;
+                width: 60px;
+                height: 40px;
+                border: 0;
+                background-color: #2196f3;
+                color: #fff;
+            }
+            #uploadPreview {
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+        }
+    }
+}

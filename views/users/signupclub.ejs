@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Groupin :: Sign Up for Club</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="/stylesheet/noto-sans/noto.css">
+    <link rel="stylesheet" href="/stylesheet/login.css">
+</head>
+
+<body>
+    <div id="loginBoxVerticalWrapper">
+        <div id="loginBoxWrapper">
+            <div id="loginBox">
+                <a href="/"><img src="../img/logo.png" alt="Groupin"></a>
+                <form action="" method="post" enctype="multipart/form-data">
+                    <input type="text" placeholder="아이디" id="id" name="id" required>
+                    <input type="password" placeholder="비밀번호" id="pw" name="pw" required>
+                    <input type="text" placeholder="동아리 이름" id="comu_name" name="comu_name" required>
+                    <div id="categoryList">
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="game" id="categoryGame">
+                            <label for="categoryGame">게임</label>
+                        </div>
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="web" id="categoryWeb">
+                            <label for="categoryWeb">웹</label>
+                        </div>
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="app" id="categoryApp">
+                            <label for="categoryApp">모바일 앱</label>
+                        </div>
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="network" id="categoryNetwork">
+                            <label for="categoryNetwork">네트워크</label>
+                        </div>
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="accounting" id="categoryAccounting">
+                            <label for="categoryAccounting">회계</label>
+                        </div>
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="management" id="categoryManagement">
+                            <label for="categoryManagement">경영</label>
+                        </div>
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="video" id="categoryVideo">
+                            <label for="categoryVideo">영상</label>
+                        </div>
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="design" id="categoryDesign">
+                            <label for="categoryDesign">디자인</label>
+                        </div>
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="music" id="categoryMusic">
+                            <label for="categoryMusic">음악</label>
+                        </div>
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="illust" id="categoryIllust">
+                            <label for="categoryIllust">일러스트</label>
+                        </div>
+                        <div class="category_elements">
+                            <input type="radio" name="category" value="common" id="categoryCommon">
+                            <label for="categoryCommon">일반</label>
+                        </div>
+                    </div>
+                    <input type="submit" value="가입">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

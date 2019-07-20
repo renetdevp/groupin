@@ -1,0 +1,231 @@
+#profileTopWrapper {
+  display: table;
+  width: 100%;
+  height: 350px;
+  background-color: #f6f6f6;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  letter-spacing: -1px;
+}
+#profileTopWrapper #profileTop {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+#profileTopWrapper #profileTop #profileImage {
+  display: block;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+#profileTopWrapper #profileTop #profileImageForm {
+  display: none;
+  position: absolute;
+  top: calc(50% - 12.5px);
+  left: calc(50% - 141.5px);
+  background-color: #fff;
+}
+#profileTopWrapper #profileTop #nicknameForm {
+  position: relative;
+  display: inline-block;
+}
+#profileTopWrapper #profileTop #nicknameForm #profileName {
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+#profileTopWrapper #profileTop #nicknameForm input#profileName {
+  margin-top: 10px;
+}
+#profileTopWrapper #profileTop #nicknameForm #nicknameChangeButton {
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+  right: -25px;
+  font-size: 1.2em;
+}
+#profileTabWrapper {
+  width: 100%;
+  height: 50px;
+}
+#profileTabWrapper #profileTab {
+  text-align: center;
+}
+#profileTabWrapper #profileTab #profileTabList {
+  margin: 0;
+  padding: 0;
+}
+#profileTabWrapper #profileTab #profileTabList .profile_tab_elements {
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  list-style: none;
+  width: 60px;
+  height: 100%;
+  margin: 0 20px;
+  line-height: 50px;
+}
+#profileTabWrapper #profileTab #profileTabList .activate {
+  border-top: 4px solid #2196f3;
+}
+#clubIntroduce {
+  width: 500px;
+  margin: 60px auto 60px auto;
+}
+#clubIntroduce #clubIntroduceTitle {
+  position: relative;
+  width: 120px;
+  margin: 0 auto 10px auto;
+  border-bottom: 3px solid #2196f3;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+#clubIntroduce #clubIntroduceTitle i {
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+  right: -25px;
+  font-size: 0.85em;
+}
+#clubIntroduce textarea#clubIntroduceContent {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+}
+#clubCareer {
+  width: 500px;
+  margin: 60px auto 60px auto;
+}
+#clubCareer #clubCareerTitle {
+  position: relative;
+  width: 160px;
+  margin: 0 auto 16px auto;
+  border-bottom: 3px solid #2196f3;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+#clubCareer #clubCareerList {
+  margin: 16px 0;
+  padding: 0;
+}
+#clubCareer #clubCareerList .club_career_elements {
+  display: block;
+  list-style: none;
+  margin: 8px 0;
+  text-align: center;
+}
+#clubCareer #clubCareerList .club_career_elements .career_elements_content {
+  display: inline-block;
+}
+#clubCareer #clubCareerList .club_career_elements .career_elements_delete {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#clubCareer #clubCareerForm {
+  width: 100%;
+  height: 30px;
+  transition: box-shadow 0.1s;
+}
+#clubCareer #clubCareerForm:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+#clubCareer #clubCareerForm #clubCareerInput {
+  box-sizing: border-box;
+  outline: 0;
+  width: calc(100% - 34px);
+  margin: 0;
+  height: 100%;
+  padding: 0 16px;
+  border: 0;
+}
+#clubCareer #clubCareerForm #clubCareerSubmit {
+  width: 30px;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 100;
+  vertical-align: top;
+}
+#clubGallery {
+  position: relative;
+  width: 500px;
+  margin: 60px auto 60px auto;
+}
+#clubGallery #clubGalleryTitle {
+  position: relative;
+  width: 70px;
+  margin: 0 auto 10px auto;
+  border-bottom: 3px solid #2196f3;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+#clubGallery #clubGalleryTitle i {
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+  right: -25px;
+  font-size: 0.85em;
+}
+#clubGallery #clubGalleryImage {
+  text-align: center;
+}
+#clubGallery #clubGalleryImage .gallery_image_elements {
+  display: inline-block;
+}
+#clubGallery #clubGalleryImage .gallery_image_elements img {
+  vertical-align: middle;
+  width: 143px;
+  height: 143px;
+  margin: 20px 10px;
+  border-radius: 50%;
+}
+#clubGallery #galleryUploadPopup {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  background-color: #fff;
+}
+#clubGallery #galleryUploadPopup form {
+  width: 100%;
+}
+#clubGallery #galleryUploadPopup form #uploadFileInput {
+  width: 100%;
+  height: 40px;
+}
+#clubGallery #galleryUploadPopup form #uploadNameInput {
+  box-sizing: border-box;
+  vertical-align: top;
+  width: calc(100% - 70px);
+  height: 40px;
+  margin-left: 5px;
+  padding: 0 16px;
+  border: 1px solid #ccc;
+}
+#clubGallery #galleryUploadPopup form #uploadFileSubmit {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  border: 0;
+  background-color: #2196f3;
+  color: #fff;
+}
+#clubGallery #galleryUploadPopup form #uploadPreview {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}

@@ -1,0 +1,35 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/login_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#backgroundCover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: fadeout(#000, 50%);
+}
+
+#loginBoxVerticalWrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    #loginBoxWrapper {
+        display: table-cell;
+        vertical-align: middle;
+        #loginBox {
+            width: 400px;
+            height: 200px;
+            background-color: fadeout(#fff, 30%);
+            box-shadow: 0 2px 8px fadeout(#000, 70%);
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#loginBoxVerticalWrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper #loginBox {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper #loginBox img {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper #loginBox form input {
+  display: block;
+  box-sizing: border-box;
+  outline: none;
+  width: 50%;
+  height: 40px;
+  margin: 8px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper #loginBox form input[type="submit"] {
+  cursor: pointer;
+  height: 40px;
+  border: 2px solid #2196f3;
+  background-color: #fff;
+  transition-property: color, background;
+  transition-duration: 0.1s;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper #loginBox form input[type="submit"]:hover {
+  background-color: #2196f3;
+  color: #fff;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper #loginBox form input[type="radio"] {
+  display: initial;
+  width: initial;
+  height: initial;
+  margin-left: 10px;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper #loginBox form #categoryList {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  text-align: justify;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper #loginBox form #categoryList .category_elements {
+  display: inline-block;
+  width: 40%;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper #loginBox #signupMenu {
+  margin-top: 20px;
+  color: #888;
+  font-size: 0.85em;
+  font-weight: 300;
+}
+#loginBoxVerticalWrapper #loginBoxWrapper #loginBox #signupMenu a {
+  margin-left: 10px;
+  color: inherit;
+  text-decoration: none;
+}

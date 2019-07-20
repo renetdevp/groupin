@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Groupin :: Login</title>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="/stylesheet/noto-sans/noto.css">
+    <link rel="stylesheet" href="/stylesheet/login.css">
+</head>
+
+<body>
+    <div id="loginBoxVerticalWrapper" name="loginBoxVerticalWrapper">
+        <div id="loginBoxWrapper" name="loginBoxWrapper">
+            <div id="loginBox" name="loginBox">
+				<!--이따 회원가입.ejs의 로고에 링크 추가-->
+                <a href="/"><img src="img/logo.png" alt="Groupin"></a>
+                <form action="/login" method="post" enctype="multipart/form-data">
+                    <input type="text" id="id" name="id" placeholder="아이디">
+                    <input type="password" id="pw" name="pw" placeholder="비밀번호">
+                    <input type="submit" value="로그인">
+                </form>
+                <div id="signupMenu">
+                    회원가입 :
+                    <a href="signupperson.html">개인회원</a>
+                    <a href="signupclub.html">동아리회원</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

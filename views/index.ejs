@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Groupin</title>
+
+    <meta charset="utf-8">
+	<% include ./partials/style %>
+    <link rel="stylesheet" href="/stylesheet/index.css">
+    <script src="/js/blockBodyScroll.js"></script>
+    <script src="/js/postPopup.js"></script>
+    <script src="/js/postComment.js"></script>
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <div id="headerVertical">
+            <header id="mainHeader">
+                <a href="/"><img src="img/logo.png" alt="서비스 이름 로고" id="headerLogo"></a>
+
+                <form action="" id="searchForm">
+                    <input type="text" placeholder="검색어를 입력해주세요." autocomplete="on" class="input_search">
+                    <button type="submit" id="searchSubmit">
+                        <i class="material-icons">search</i>
+                    </button>
+                </form>
+                <button id="accountInfo" class="header_button">
+                    <i class="material-icons">person</i>
+                </button>
+                <div id="accountInfoMenu">
+                    <ul id="accountInfoList">
+                        <li class="account_elements"><a href="/login">로그인</a></li>
+                        <li class="account_elements"><a href="/logout">로그아웃</a></li>
+                        <li class="account_elements"><a href="/signupclub">회원가입</a></li>
+                        <li class="account_elements"><a href="profile.html">프로필</a></li>
+                    </ul>
+                </div>
+                <a href="write.html">
+                    <button id="createPost" class="header_button">
+                        <i class="material-icons">create</i>
+                    </button>
+                </a>
+
+                <button id="headerSubjectButton">주제</button>
+                <div id="subjectSelect">
+                    <ul id="subjectList">
+                        <li class="subject_elements">게임</li>
+                        <li class="subject_elements">웹</li>
+                        <li class="subject_elements">모바일 앱</li>
+                        <li class="subject_elements">경영</li>
+                        <li class="subject_elements">경제</li>
+                        <li class="subject_elements">연극</li>
+                        <li class="subject_elements">영상</li>
+                        <li class="subject_elements">디자인</li>
+                        <li class="subject_elements">일러스트</li>
+                        <li class="subject_elements">음악</li>
+                        <li class="subject_elements">기타</li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div id="mainSectionWrapper">
+        <section id="mainSection">
+            <div id="clubPostPopupWrapper">
+                <div id="clubPostPopup">
+                    <div id="clubPostHeader">
+                        <a href="#" id="profileLink">
+                            <img src="img/sample1.png" alt="프로필 이미지" id="profileImage">
+                            <div id="profileName">밀크군</div>
+                        </a>
+                        <div id="postDate">2016월 11월 01일 오후 12시 20분</div>
+                        <div class="close_button_wrapper">
+                            <div class="close_button">
+                                <div class="line_left"></div>
+                                <div class="line_right"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="clubPostContent">
+                        <img src="img/sample1.png" alt="동아리 이미지" id="postMainImage">
+                        <div id="postContent">
+                            <p>이번 축제 때, 에드캔에서 마시멜로를 구워 드립니다!</p>
+                            <p>이번 축제 때, 에드캔에서 마시멜로를 구워 드립니다!</p>
+                            <p>이번 축제 때, 에드캔에서 마시멜로를 구워 드립니다!</p>
+                            <p>이번 축제 때, 에드캔에서 마시멜로를 구워 드립니다!</p>
+                        </div>
+
+                        <form action="" method="post" id="commentInputForm">
+                            <input type="text" placeholder="댓글 입력..." maxlength="200" required id="commentInput">
+                            <input type="submit" value="입력" class="comment_submit">
+                        </form>
+
+                        <div id="postCommentWrapper">
+                            <div class="post_comment">
+                                <div class="post_comment_profile">
+                                    <a href="#" class="comment_profile_link">
+                                        <img src="img/sample1.png" alt="프로필 이미지" class="comment_profile_image">
+                                        <div class="comment_profile_name">밀크군</div>
+                                    </a>
+                                    <div class="comment_date">2016월 11월 01일 오후 12시 20분</div>
+                                </div>
+                                <br>
+                                <div class="post_comment_content">
+                                    와! 정말 맛있겠네요!!
+                                </div>
+                            </div>
+
+                            <div class="post_comment">
+                                <div class="post_comment_profile">
+                                    <a href="#" class="comment_profile_link">
+                                        <img src="img/sample1.png" alt="프로필 이미지" class="comment_profile_image">
+                                        <div class="comment_profile_name">밀크군</div>
+                                    </a>
+                                    <div class="comment_date">2016월 11월 01일 오후 12시 20분</div>
+                                </div>
+                                <br>
+                                <div class="post_comment_content">
+                                    와! 정말 맛있겠네요!!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club_card" onclick="postPopup(1)">
+                <div class="card_image">
+                    <img src="img/sample1.png" alt="sample1">
+                </div>
+                <div class="card_footer">
+                    <div class="card_profile">
+                        <img src="img/sample1.png" alt="sample1" class="card_profile_image">
+                        <div title="밀크군" class="card_profile_name">밀크군</div>
+                    </div>
+                    <div class="card_explain_area">
+                        <div class="card_date">2016 - 10 - 31</div>
+                        <div class="card_explain">이번 축제 때, 에드캔에서 마시멜로를 구워 드립니다!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

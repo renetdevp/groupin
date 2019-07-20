@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Groupin :: Write</title>
+
+    <meta charset="utf-8">
+	<% include ./partials/style %>
+    <link rel="stylesheet" href="/stylesheet/write.css">
+    <script src="/js/imageUpload.js"></script>
+</head>
+
+<body>
+    <div id="headerWrapper">
+        <div id="headerVertical">
+            <header id="mainHeader">
+                <a href="/"><img src="img/logo.png" alt="서비스 이름 로고" id="headerLogo"></a>
+
+                <form action="" id="searchForm">
+                    <input type="text" placeholder="검색어를 입력해주세요." autocomplete="on" class="input_search">
+                    <button type="submit" id="searchSubmit">
+                        <i class="material-icons">search</i>
+                    </button>
+                </form>
+                <button id="accountInfo" class="header_button">
+                    <i class="material-icons">person</i>
+                </button>
+                <div id="accountInfoMenu">
+                    <ul id="accountInfoList">
+                        <li class="account_elements"><a href="login.html">로그인</a></li>
+                        <li class="account_elements"><a href="logout.html">로그아웃</a></li>
+                        <li class="account_elements"><a href="signup.html">회원가입</a></li>
+                        <li class="account_elements"><a href="profile.html">프로필</a></li>
+                    </ul>
+                </div>
+                <a href="write.html">
+                    <button id="createPost" class="header_button">
+                        <i class="material-icons">create</i>
+                    </button>
+                </a>
+
+                <button id="headerSubjectButton">주제</button>
+                <div id="subjectSelect">
+                    <ul id="subjectList">
+                        <li class="subject_elements">게임</li>
+                        <li class="subject_elements">웹</li>
+                        <li class="subject_elements">모바일 앱</li>
+                        <li class="subject_elements">경영</li>
+                        <li class="subject_elements">경제</li>
+                        <li class="subject_elements">연극</li>
+                        <li class="subject_elements">영상</li>
+                        <li class="subject_elements">디자인</li>
+                        <li class="subject_elements">일러스트</li>
+                        <li class="subject_elements">음악</li>
+                        <li class="subject_elements">기타</li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div id="writeSectionWrapper">
+        <section id="writeSection">
+            <form action="/write" method="post" enctype="multipart/form-data" id="writeForm">
+                <input type="text" maxlength="100" placeholder="글 제목" id="postTitle" name="postTitle">
+                <input type="file" id="postImageInput" name="postImageInput">
+                <img src="" alt="포스트 이미지 미리보기" id="postImagePreview">
+                <textarea id="postContent" name="postContent"></textarea>
+                <div id="categoryList">
+                    <input type="radio" name="category" value="act" id="categoryAct">
+                    <label for="categoryAct">활동</label>
+                    <input type="radio" name="category" value="event" id="categoryEvent">
+                    <label for="categoryEvent">행사</label>
+                    <input type="radio" name="category" value="promote" id="categoryPromote">
+                    <label for="categoryPromote">홍보</label>
+                    <input type="radio" name="category" value="help" id="categoryHelp">
+                    <label for="categoryHelp">구인</label>
+                </div>
+                <input type="submit" value="글 쓰기" id="postSubmit">
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

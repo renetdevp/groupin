@@ -1,0 +1,109 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 60px 0 60px 0;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+input,
+button,
+textarea {
+  outline: none;
+}
+.search_form_unselect {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+.search_form_select {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+#mainSectionWrapper {
+  width: 100%;
+  height: 100%;
+}
+#mainSectionWrapper #mainSection {
+  width: 1200px;
+  margin: 16px auto 0 auto;
+}
+#writeSectionWrapper {
+  width: 100%;
+  height: 100%;
+  padding-top: 16px;
+}
+#writeSectionWrapper #writeSection {
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+#writeForm {
+  padding: 16px;
+  border-radius: 4px;
+}
+#writeForm #postTitle {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 8px;
+  padding: 24px 8px;
+  border: 0;
+  border-bottom: 2px solid #ccc;
+  font-size: 1.5em;
+  transition: border 0.1s;
+}
+#writeForm #postTitle:focus {
+  border-bottom: 2px solid #2196f3;
+}
+#writeForm #postImagePreview {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+#writeForm #postContent {
+  box-sizing: border-box;
+  display: block;
+  resize: none;
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  font-family: "Noto Sans KR";
+  font-weight: 300;
+  font-size: 1.1em;
+  transition: border 0.1s;
+}
+#writeForm #postContent:focus {
+  border: 1px solid #2196f3;
+}
+#writeForm #categoryList {
+  box-sizing: border-box;
+  margin-top: 10px;
+  padding: 16px;
+}
+#writeForm #categoryList label {
+  margin-right: 16px;
+}
+#writeForm #postSubmit {
+  float: right;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  margin-top: 10px;
+  border: 2px solid #2196f3;
+  border-radius: 3px;
+  background-color: #fff;
+  transition-property: background, color;
+  transition-duration: 0.15s;
+}
+#writeForm #postSubmit:hover {
+  background-color: #2196f3;
+  color: #fff;
+}
+#writeForm:after {
+  content: "";
+  display: block;
+  clear: both;
+}
